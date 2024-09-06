@@ -63,5 +63,26 @@
         }
      ?>
      <!-- problem #4 solution printing the multiplication table with 1 to 10  -->
+     <!-- problem #5 solution printing the sum of  1 to 10  -->
+      <h2>Sum of numbers from 1 to 10</h2>
+      <?php 
+        $sum = 0;
+        for($i=1; $i <=10; $i++ ){
+            $sum = $sum+$i;
+        }
+        echo "The sum of numbers from 1 to 10 is: ".$sum;
+      ?>
+     <!-- problem #5 solution printing the sum of  1 to 10  -->
+     <!-- problem #6 solution printing 10!  -->
+      <h2>factorial 10</h2>
+      <?php 
+        $factorial = 1;
+        for($i=1; $i <=10; $i++ ){
+            $factorial = $factorial * $i;
+        }
+        echo "The factorial 10 is: ".$factorial;
+      ?>
+     <!-- problem #6 solution printing 10!  -->
+     
 </body>
 </html>
