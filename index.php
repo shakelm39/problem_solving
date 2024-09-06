@@ -1,4 +1,4 @@
-<?php include_once 'problems.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
