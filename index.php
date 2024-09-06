@@ -118,8 +118,8 @@ $fahrenheit = 77;
 $celsius = fahrenheitTocelsius( $fahrenheit );
 echo "$fahrenheit °C is equal to $celsius °F.";
 ?>
-     <!-- problem #8 solution converting from Fahreheit to Celcius  -->
-     <!-- problem #8 solution Calculate the sum of numbers in an array of numbers  -->
+     <!-- problem #9 solution converting from Fahreheit to Celcius  -->
+     <!-- problem #10 solution Calculate the sum of numbers in an array of numbers  -->
       <h2>Calculate the sum of numbers in an array of numbers</h2>
       <?php
 
@@ -129,14 +129,15 @@ echo "$fahrenheit °C is equal to $celsius °F.";
                 $sum += $number;
             }
             return $sum;
+           
         }
         $numbers = [1, 2, 3, 4, 5];
         $sum = sumArray( $numbers );
 
         echo "The sum of the numbers in the array is : ".$sum;
      ?>
-     <!-- problem #8 solution Calculate the sum of numbers in an array of numbers  -->
-     <!-- problem #8 solution Calculate the average of the numbers in an array of numbers  -->
+     <!-- problem #10 solution Calculate the sum of numbers in an array of numbers  -->
+     <!-- problem #11 solution Calculate the average of the numbers in an array of numbers  -->
       <h2>Calculate the average of the numbers in an array of numbers</h2>
       <?php
 
@@ -164,7 +165,30 @@ echo "$fahrenheit °C is equal to $celsius °F.";
 
         echo "The sum of the numbers in the array is : ".$average;
      ?>
-     <!-- problem #8 solution Calculate the average of the numbers in an array of numbers  -->
+     <!-- problem #11 solution Calculate the average of the numbers in an array of numbers  -->
+     
+     <!-- problem #12 solution Create a function that receives an array of numbers and returns an array containing only the positive numbers  -->
+      <h2>Create a function that receives an array of numbers and returns an array containing only the positive numbers</h2>
+      <?php 
+
+        function filterPositiveArray( $numbers ) {
+            $positiveNumber = [];
+            
+            foreach($numbers as $number){
+                if($number >0){
+                    $positiveNumber[] = $number;
+                }
+                 
+            }
+            return $positiveNumber;
+            
+        }
+        $numbers = [1, 2,-5, 3, -10, 6];
+        $positiveNumber = filterPositiveArray( $numbers );
+        print_r ($positiveNumber);
+        
+      ?>
+     <!-- problem #12 solution Create a function that receives an array of numbers and returns an array containing only the positive numbers  -->
 
 
 
