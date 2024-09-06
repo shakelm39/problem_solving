@@ -189,6 +189,25 @@ echo "$fahrenheit °C is equal to $celsius °F.";
         
       ?>
      <!-- problem #12 solution Create a function that receives an array of numbers and returns an array containing only the positive numbers  -->
+     <!-- problem #13 solution Print the first 10 Fibonacci numbers without recursion -->
+      <h2>Print the first 10 Fibonacci numbers without recursion</h2>
+      <?php 
+        function printFibonacci($n){
+            $a = 0;
+            $b = 1;
+
+            for($i=1; $i < $n-1; $i++){
+                $next = $a + $b;
+                print($next);
+                $a = $b;
+                $b = $next;
+               
+            }
+            
+        }
+        print ( printFibonacci(10));
+      ?>
+     <!-- problem #13 solution Print the first 10 Fibonacci numbers without recursion -->
 
 
 
