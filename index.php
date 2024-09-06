@@ -79,11 +79,31 @@
         $factorial = 1;
         for($i=1; $i <=10; $i++ ){
             $factorial *= $i;
-            
         }
         echo "The factorial 10 is: ".$factorial;
       ?>
      <!-- problem #6 solution printing 10!  -->
+     <!-- problem #7 solution Calculate the sum of odd numbers greater than 10 and less than 30  -->
+      <h2>Calculate the sum of odd numbers greater than 10 and less than 30</h2>
+      <?php 
+        $odd_sum = 0;
+        for($i= 11; $i < 30; $i++ ){
+            
+            if( $i % 2 == 0){
+                
+            }else{
+               
+                $odd_sum += $i;
+
+            }
+            
+        }
+        echo "The sum of odd numbers is: $odd_sum";
+      ?>
+     <!-- problem #7 solution Calculate the sum of odd numbers greater than 10 and less than 30  -->
+
+     
+     
      
 </body>
 </html>
