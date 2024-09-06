@@ -44,6 +44,24 @@
             echo "<br>";
         }
       ?>
-     <!-- problem # solution printing the multiplication table with 7  -->
+     <!-- problem #3 solution printing the multiplication table with 7  -->
+     <!-- problem #4 solution printing the multiplication table with 1 to 10  -->
+     <h2>Printing the multiplication tables with numbers from 1 to 10</h2>
+     <?php 
+        for($i=1; $i <=10; $i++ ){
+            echo "<br>";
+            echo "Multiplication Number for $i";
+            echo "<br>";
+            
+            for($j=1; $j <=10; $j++ ){
+               
+                echo $i. " x ".$j." = ".$i*$j;
+                echo "<br>";
+                
+            }
+            
+        }
+     ?>
+     <!-- problem #4 solution printing the multiplication table with 1 to 10  -->
 </body>
 </html>
