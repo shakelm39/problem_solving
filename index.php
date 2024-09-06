@@ -21,5 +21,20 @@
      ?>
      </ul>
     <!-- problem #1 solution -->
+     <!-- problem #2 solution printing odd number less than 100  -->
+     <h2>Solution #2 Printing Odd Number Less than 100</h2>
+     <?php 
+        for ( $i = 1; $i <= 100; $i++ ){
+            if( $i%2== 0){
+                
+            }else{
+                echo"<li>";
+                echo "The Odd Number Is: ". $i;
+                echo "</li>";
+            }
+        }
+       
+     ?>
+     <!-- problem #2 solution printing odd number less than 100  -->
 </body>
 </html>
