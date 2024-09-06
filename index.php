@@ -36,5 +36,14 @@
        
      ?>
      <!-- problem #2 solution printing odd number less than 100  -->
+     <!-- problem #3 solution printing the multiplication table with 7 -->
+      <h2>Printing the multiplication table with 7</h2>
+      <?php 
+        for( $i = 1; $i <= 10; $i++ ){
+            echo "7 x ".$i." = ".$i*7;
+            echo "<br>";
+        }
+      ?>
+     <!-- problem # solution printing the multiplication table with 7  -->
 </body>
 </html>
