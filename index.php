@@ -25,9 +25,7 @@
      <h2>Solution #2 Printing Odd Number Less than 100</h2>
      <?php 
         for ( $i = 1; $i <= 100; $i++ ){
-            if( $i%2== 0){
-                
-            }else{
+            if( $i%2 !== 0){
                 echo"<li>";
                 echo "The Odd Number Is: ". $i;
                 echo "</li>";
@@ -70,7 +68,7 @@
         for($i=1; $i <=10; $i++ ){
             $sum += $i;
         }
-        echo "The sum of numbers from 1 to 10 is: ".$sum;
+        echo "The sum of numbers from 1 to 10 is: " .$sum;
       ?>
      <!-- problem #5 solution printing the sum of  1 to 10  -->
      <!-- problem #6 solution printing 10!  -->
@@ -80,7 +78,7 @@
         for($i=1; $i <=10; $i++ ){
             $factorial *= $i;
         }
-        echo "The factorial 10 is: ".$factorial;
+        echo "The factorial 10 is: " .$factorial;
       ?>
      <!-- problem #6 solution printing 10!  -->
      <!-- problem #7 solution Calculate the sum of odd numbers greater than 10 and less than 30  -->
@@ -89,18 +87,38 @@
         $odd_sum = 0;
         for($i= 11; $i < 30; $i++ ){
             
-            if( $i % 2 == 0){
-                
-            }else{
-               
+            if( $i % 2 !== 0){
                 $odd_sum += $i;
-
             }
             
         }
-        echo "The sum of odd numbers is: $odd_sum";
+        echo "The sum of odd numbers is : " .$odd_sum;
       ?>
      <!-- problem #7 solution Calculate the sum of odd numbers greater than 10 and less than 30  -->
+     <!-- problem #8 solution converting from Celsius to Fahrenheit  -->
+      <h2>Converting from Celsius to Fahrenheit</h2>
+      <?php 
+         function celciusTofahrenheit($celcius){
+            $farhenheit = ($celcius * 9/5)+32;
+            return $farhenheit;
+         }
+         $celsiusTemperature = 25;
+         $fahrenheitTemperature = celciusTofahrenheit($celsiusTemperature);
+         echo "$celsiusTemperature °C is equal to $fahrenheitTemperature °F.";
+      ?>
+     <!-- problem #8 solution converting from Celsius to Fahrenheit  -->
+     <!-- problem #9 solution converting from Fahreheit to Celcius  -->
+      <h2>Converting from Fahrenheit to Celsius</h2>
+      <?php 
+         function fahrenheitTocelcius($fahrenheit){
+            $celcius = ($fahrenheit -32)* 5/9;
+            return $celcius;
+         }
+         $fahrenheit = 77;
+         $celsius = fahrenheitTocelcius($fahrenheit);
+         echo "$fahrenheit °C is equal to $celsius °F.";
+      ?>
+     <!-- problem #8 solution converting from Fahreheit to Celcius  -->
 
      
      
